@@ -20,7 +20,7 @@ class GameFactory extends Factory
             'name' => fake()->sentence(3),
             'classification' => fake()->randomLetter(),
             'genre' => fake()->sentence(1),
-            'price' => fake()->numberBetween(500, 100),
+            'price' => fake()->numberBetween(500, 1000),
         ];
     }
 }
