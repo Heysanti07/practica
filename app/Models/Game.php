@@ -9,4 +9,12 @@ class Game extends Model
 {
     /** @use HasFactory<\Database\Factories\GameFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'classification',
+        'genre',
+        'price'
+    ];
+
 }

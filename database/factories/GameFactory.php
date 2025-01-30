@@ -17,7 +17,10 @@ class GameFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->sentence(3),
+            'classification' => fake()->randomLetter(),
+            'genre' => fake()->sentence(1),
+            'price' => fake()->numberBetween(500, 100),
         ];
     }
 }
