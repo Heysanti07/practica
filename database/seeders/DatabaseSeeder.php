@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder
             GameSeeder::class,
         ]);
 
+        $this->call([
+            OfferSeeder::class,
+        ]);
+
         // User::factory(10)->create();
 
         // User::factory()->create([

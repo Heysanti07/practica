@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Game;
 use Illuminate\Foundation\Application;
@@ -8,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::resource('games', GameController::class);
+Route::resource('offers', OfferController::class);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
